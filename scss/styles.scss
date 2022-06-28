@@ -179,6 +179,14 @@ button {
 	border-radius: 50%;
 }
 
+.carousel-box:hover {
+	cursor: grab;
+}
+
+.carousel-box:active {
+	cursor: grabbing;
+}
+
 .carousel-heading {
 	font-size: 30px;
 	line-height: 37px;
@@ -344,6 +352,14 @@ button {
 .team-info {
 	background: $cl-grey-bg;
 	padding: 30px;
+}
+
+.team-card:hover {
+	cursor: grab;
+}
+
+.team-card:active {
+	cursor: grabbing;
 }
 
 .team-photo {
@@ -1526,7 +1542,7 @@ button {
 }
 
 .team-pg-nav-item:last-child {
-	padding-bottom: 120px;
+	padding-bottom: 270px;
 }
 
 .team-main-heading {
