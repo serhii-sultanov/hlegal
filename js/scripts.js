@@ -13,7 +13,7 @@ $(".carousel").slick({
                 arrows: false,
                 autoplay: true,
                 infinite: true,
-                speed: 2000,
+                speed: 1000,
                 fade: true,
                 cssEase: "linear",
             });
@@ -26,3 +26,51 @@ $(".carousel-team").slick({
                 fade: true,
                 cssEase: "linear",
             });
+$('.carousel-achievements').slick({
+  dots: false,
+  arrows: false,
+  infinite: true,
+  autoplay: true,
+  speed: 1000,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  mobileFirst: true,
+  responsive: [
+    {
+      breakpoint: 1440,
+      settings: {
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 300,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
